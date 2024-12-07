@@ -1,5 +1,69 @@
 <!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
+<!-- --------------------------------------------------------------------- HOOK  useState()  ESTADO  ----------------------------------------------------------------------------------->
+
+
+<!-- 
+El useState en React es un hook que nos permite manejar el estado en componentes funcionales. En React, el estado es un objeto que almacena información dinámica que puede 
+cambiar con el tiempo. Antes de los hooks, solo los componentes de clase podían manejar estado, pero con useState, podemos trabajar con él en componentes funcionales.
+
+
+Declaración: Se utiliza dentro del componente para declarar una variable de estado y una función que permita actualizarla. La sintaxis básica es:
+
+const [estado, setEstado] = useState(valorInicial);
+
+estado: Es el valor actual del estado.
+setEstado: Es una función para actualizar el valor de estado.
+valorInicial: Es el valor con el que comienza el estado.
+
+Cuando se llama a setEstado, React vuelve a renderizar el componente con el nuevo valor del estado.
+
+
+EJEMPLO:
+
+
+function Contador() {
+  // Declaramos una variable de estado llamada 'contador', con un valor inicial de 0
+  const [contador, setContador] = useState(0);
+
+  // Función que incrementa el contador
+  const incrementar = () => {
+    setContador(contador + 1); // Actualizamos el estado
+  };
+
+  // Función que reinicia el contador a 0
+  const reiniciar = () => {
+    setContador(0); // Actualizamos el estado
+  };
+
+  return (
+    <div>
+      <h1>Contador: {contador}</h1>
+      <button onClick={incrementar}>
+        Incrementar
+      </button>
+      <button onClick={reiniciar}>
+        Reiniciar
+      </button>
+    </div>
+  );
+}
+
+
+-->
+
+<!-- --------------------------------------------------------------------- HOOK  useEffect()    ----------------------------------------------------------------------------------->
+
+<!-- 
+
+
+
+
+
+
+
+
+-->
 
 <!-- ---------------------------------------------------------------------    .MAP     ----------------------------------------------------------------------------------- -->
 
@@ -26,7 +90,8 @@ El método .map() devuelve un nuevo arreglo con los resultados de aplicar la fun
 
 
 
-----Aquí hay un ejemplo simple para ilustrar cómo funciona:
+EJEMPLO:
+
 
 const numeros = [1, 2, 3, 4, 5];
 
@@ -37,14 +102,21 @@ const duplicados = numeros.map((numero, indice) => {
 
 console.log(duplicados);
 
--Se define un arreglo llamado numeros con algunos valores.
--Se llama a .map() en numeros.
--La función de retorno ((numero, indice) => { return numero * 2; }) duplica cada número y devuelve el resultado.
--El nuevo arreglo resultante (duplicados) contiene [2, 4, 6, 8, 10].
--Puedes utilizar .map() para transformar los elementos de un arreglo de muchas maneras diferentes, dependiendo de la lógica que proporciones en la función de retorno. 
-En el contexto de React, es común usar .map() para generar elementos JSX dinámicamente en base a los elementos de un arreglo.
+
+Durante el recorrido del map, se imprimirán estos mensajes en la consola:
+
+Procesando elemento en el índice 0
+Procesando elemento en el índice 1
+Procesando elemento en el índice 2
+Procesando elemento en el índice 3
+Procesando elemento en el índice 4
+
+Después, se imprimirá el array duplicados:
+
+[2, 4, 6, 8, 10]
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
