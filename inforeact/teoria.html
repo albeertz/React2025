@@ -56,10 +56,47 @@ function Contador() {
 
 <!-- 
 
+El hook useEffect es una herramienta en React que permite manejar efectos secundarios en los componentes funcionales. 
+Un efecto secundario es cualquier acción que interactúe con el mundo exterior de tu componente, como:
+
+Llamadas a una API.
+Actualización de datos.
+Subscripciones a eventos.
+Manipulación del DOM.
+
+
+useEffect(() => {
+  // Código del efecto principal
+  return () => {
+    // Código de limpieza opcional
+  };
+}, [dependencias]);
+
+
+1 Efecto principal: Es el código que deseas ejecutar.
+2 Limpieza opcional: Se ejecuta antes de que el efecto se vuelva a ejecutar o cuando el componente se desmonte.
+3 Array de dependencias: Controla cuándo se ejecuta el efecto:
+  -Si está vacío [], el efecto solo se ejecuta una vez, después del montaje.
+  -Si tiene dependencias, el efecto se ejecuta cuando alguna de ellas cambia.
+  -Si omites el array, el efecto se ejecuta después de cada renderizado (no recomendado en la mayoría de los casos).
 
 
 
+const Timer = () => {
+    const [seconds, setSeconds] = useState(0);
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSeconds((prev) => prev + 1);
+        }, 1000);
+
+        return () => {
+            clearInterval(interval); // Limpieza para evitar intervalos innecesarios
+        };
+    }, []); // Solo al montar y desmontar
+
+    return <h1>Segundos: {seconds}</h1>;
+};
 
 
 
