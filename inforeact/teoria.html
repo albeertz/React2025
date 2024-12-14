@@ -1,6 +1,47 @@
-<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<!-- --------------------------------------------------------------------- HOOK  useState()  ESTADO  ----------------------------------------------------------------------------------->
+
+<!-- --------------------------------------------------------------------- PASAR PROYECTO VANILLA A REACT  -------------------------------------------------------------------------->
+<!--
+1-- creamos el proyecto con vite
+
+  npm create vite@latest
+
+2-- Seleccionamos VANILLA
+
+3-- Seleccionamos JavaScript
+
+4-- cd proyecto
+  npm install @vitejs/plugin-react -E  (-E Esto garantiza que siempre se use exactamente esa versión, lo que puede ser útil para evitar problemas de compatibilidad o 
+                                        diferencias inesperadas entre entornos. )
+
+5-- instalar dependencias 
+npm install react react-dom -E
+
+6-- Creamos el archivo vite.config.js en la raiz del proyecto
+
+vite.config.js :
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()]
+})
+
+7-- Iniciar aplicacion con react en el punto de entrada ( main.js ) 
+
+import { createRoot } from 'react-dom/client'
+
+const root = createRoot(document.getElementById('app'))
+root.render(<h1>Hello World</h1>)
+
+8-- Cambiar la extension de main.js a jsx 
+9-- Cambiar la extension de main.js a main.jsx en el index.html
+
+-->
+
+<!-- --------------------------------------------------------------------- HOOK  useState()  ESTADO  -------------------------------------------------------------------------------->
 
 
 <!-- 
