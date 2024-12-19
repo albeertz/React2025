@@ -196,8 +196,21 @@ Después, se imprimirá el array duplicados:
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+-------------------------------------------------------------------------INSTALAR ESLINT STANDARD-------------------------------------------------------------------------------
 
+- INSTALAR EXTENSION ESLINT
+- INSTALAR STANDARD como dependencia de desarrollo
+   npm install standard -D
 
+-AGREGAR A package.json para que tenga en cuenta las reglas de standard
+
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+
+-AGREGAR A SETTINGS.JSON para que formatee el codigo al guardar
+"editor.formatOnSave": true,
+"eslint.codeActionsOnSave.rules": null
 
 
 -->
