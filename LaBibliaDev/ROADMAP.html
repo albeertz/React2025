@@ -1,0 +1,501 @@
+<!-- // 2024 ROADMAP FULLSTACK 
+
+
+--------------------------------------------------------------------------Lenguajes y Marcado-------------------------------------------------------------------------------------
+
+
+--------HTML (Hypertext Markup Language):
+Lenguaje de Marcado
+HTML proporciona la estructura básica de una página web. Los elementos HTML se utilizan para definir la jerarquía y el contenido de la página, 
+como encabezados (<h1>, <h2>), párrafos (<p>), enlaces (<a>), imágenes (<img>), entre otros.
+
+--------CSS (Cascading Style Sheets):
+Lenguaje de Estilo
+CSS se utiliza para dar estilo y diseño a los elementos HTML. Permite controlar aspectos visuales como colores, fuentes, márgenes y posicionamiento. 
+La cascada en CSS significa que las reglas se aplican en cascada, y la especificidad de las reglas determina qué estilos prevalecerán.
+
+--------JavaScript:
+Lenguaje de Programación del Lado del Cliente (Frontend)
+Permite agregar interactividad y dinamismo a las páginas web. Se ejecuta en el navegador del usuario. JavaScript es un lenguaje de programación del lado del cliente 
+que se ejecuta en el navegador. Permite la manipulación del DOM para actualizar dinámicamente el contenido, gestionar eventos del usuario y comunicarse con servidores para obtener 
+o enviar datos sin recargar la página.
+
+--------TypeScript:
+Superset de JavaScript
+TypeScript es un superset de JavaScript que agrega tipos estáticos al lenguaje. Facilita el desarrollo al proporcionar un sistema de tipos que ayuda a capturar errores en 
+etapas tempranas y mejorar la calidad del código.
+
+--------Java:
+Lenguaje de Programación Backend
+Java es un lenguaje de programación versátil que se utiliza principalmente en el desarrollo backend. Es conocido por su portabilidad, lo que significa que el código
+Java puede ejecutarse en diferentes plataformas sin modificaciones.
+
+
+
+-----------------------------------------------------------------------Frameworks y Bibliotecas de Frontend-----------------------------------------------------------------------
+
+
+--------Angular:
+Framework de Frontend
+Angular es un framework completo para el desarrollo de aplicaciones web. Utiliza TypeScript y sigue el patrón de arquitectura MVC, facilitando la creación de aplicaciones SPA con 
+módulos y componentes reutilizables.Desarrollado por Google.
+
+--------Vue.js:
+Framework de Frontend
+Vue.js es un framework progresivo y flexible. Se centra en la capa de vista y es fácil de integrar en proyectos existentes. Ofrece directivas y componentes para simplificar el 
+desarrollo de interfaces de usuario.
+
+--------React:
+Biblioteca de JavaScript
+React es una biblioteca de JavaScript para construir interfaces de usuario. Se centra en la creación de componentes reutilizables y utiliza un enfoque declarativo para actualizar 
+eficientemente la interfaz de usuario en respuesta a cambios de estado.
+
+
+
+-----------------------------------------------------------------------Frameworks y Herramientas de Desarrollo-----------------------------------------------------------------------
+
+
+--------Astro:
+Herramienta de Construcción de Sitios Web
+Astro es una herramienta de construcción de sitios web que combina características de generación estática y dinámica. Permite construir sitios eficientes generando solo el código 
+necesario para cada página, mejorando la velocidad de carga.
+
+--------Vite:
+Herramienta de Desarrollo
+Vite es un entorno de desarrollo rápido que utiliza importación de módulos ESM (ECMAScript Modules) en el navegador. Proporciona una experiencia de desarrollo eficiente 
+y es compatible con Vue.js y React.
+
+--------Next.js:
+Framework de React
+Next.js es un framework de React que facilita el desarrollo de aplicaciones web con características como renderización del lado del servidor (SSR) y generación de sitios estáticos. 
+Mejora el rendimiento y la eficiencia en la entrega de contenido.
+
+
+
+-----------------------------------------------------------------------Librerías y Utilidades-----------------------------------------------------------------------
+
+
+--------Tailwind CSS:
+Librería de Utilidades CSS
+Tailwind CSS es una librería de utilidades CSS que proporciona clases predefinidas para diseñar interfaces de manera rápida. Elimina la necesidad de escribir CSS personalizado
+y sigue una filosofía de desarrollo centrada en clases.
+
+
+
+-----------------------------------------------------------------------Lenguajes y Tecnologías de Backend-----------------------------------------------------------------------
+
+
+--------Node.js:
+Entorno de Ejecución del Lado del Servidor (Backend)
+Node.js es un entorno de ejecución del lado del servidor que permite ejecutar JavaScript en el servidor. Es ideal para construir aplicaciones web del lado del servidor, 
+como servidores API, aprovechando la naturaleza asíncrona para un rendimiento eficiente.
+
+
+
+-----------------------------------------------------------------------Blockchain y Contratos Inteligentes-----------------------------------------------------------------------
+
+
+--------Solidity:
+Lenguaje para Contratos Inteligentes en Ethereum
+Solidity es un lenguaje utilizado para programar contratos inteligentes en la plataforma Ethereum. Permite definir reglas de negocio que se ejecutan automáticamente en la cadena 
+de bloques sin necesidad de intermediarios.
+
+
+-----------------------------------------------------------------------Pruebas y Testing-----------------------------------------------------------------------
+
+
+--------Testing:
+Pruebas en General
+El testing en desarrollo web implica verificar que una aplicación funcione correctamente. Incluye pruebas unitarias para verificar funciones y componentes individuales, 
+pruebas de integración para comprobar la interacción entre módulos, y pruebas E2E para validar el flujo completo de la aplicación.
+
+--------Playwright E2E:
+Herramienta de Prueba de Extremo a Extremo (E2E)
+Playwright E2E es un framework para automatizar pruebas de extremo a extremo. Permite simular la interacción del usuario con la aplicación, realizando acciones como hacer clic, 
+completar formularios y verificar resultados, garantizando que la aplicación se comporte como se espera.
+
+
+
+-----------------------------------------------------------------------------------DESIGN SYSTEM---------------------------------------------------------------------------------------
+
+	--- Un "design system" (sistema de diseño) se refiere a un conjunto de componentes, patrones y reglas de diseño que se utilizan de manera coherente en el desarrollo de 
+	interfaces de usuario en sitios web o aplicaciones web. Un design system en programación web se centra principalmente en la apariencia y la interactividad de la interfaz de usuario.
+
+	La implementación de un design system en programación web tiene varios beneficios, como la consistencia visual en todo el sitio, la eficiencia en el desarrollo al reutilizar
+	componentes, y la capacidad de realizar actualizaciones y cambios de manera más rápida y fácil.
+
+	Frameworks de diseño como Bootstrap, Materialize, y Foundation son ejemplos de herramientas que proporcionan design systems predefinidos para facilitar el desarrollo web. 
+	Además, muchas organizaciones crean sus propios design systems personalizados para adaptarse a sus necesidades específicas de diseño y marca.
+
+
+-----
+STORYBOOK https://storybook.js.org/
+
+Storybook es una herramienta de desarrollo para componentes de interfaz de usuario (UI) utilizada comúnmente en proyectos de desarrollo web. 
+Proporciona un entorno de desarrollo aislado y visualmente atractivo para que los desarrolladores creen, prueben y documenten componentes de manera independiente antes de integrarlos
+completamente en una aplicación.
+
+Las características clave de Storybook incluyen:
+
+--- Entorno de desarrollo aislado: Permite a los desarrolladores construir y probar componentes de manera aislada, sin la necesidad de integrarlos en la aplicación completa. 
+Esto facilita el desarrollo y la depuración de componentes de forma independiente.
+
+--- Creación de historias (stories): En Storybook, una "historia" es una representación visual de un componente en diferentes estados o variaciones. 
+Los desarrolladores pueden crear historias para mostrar cómo se ve y se comporta un componente en diferentes situaciones, como diferentes tamaños, estados de carga, etc.
+
+--- Integración con múltiples frameworks y bibliotecas: Storybook es compatible con una amplia variedad de bibliotecas y frameworks populares, como React, Vue, Angular y más. 
+Esto lo hace versátil y adaptable a diferentes tecnologías de desarrollo web.
+
+--- Documentación automática: Storybook también sirve como una herramienta de documentación, ya que las historias creadas proporcionan una documentación visual y práctica de cómo 
+utilizar cada componente.
+
+--- Extensiones y complementos: Puedes extender las capacidades de Storybook mediante complementos y extensiones para personalizar y ampliar sus funcionalidades según las necesidades 
+del proyecto.
+
+Storybook se utiliza comúnmente en proyectos donde la construcción y mantenimiento de una biblioteca de componentes es esencial para lograr una interfaz de usuario coherente y 
+reutilizable. Al proporcionar un entorno interactivo y visual para el desarrollo de componentes, Storybook ayuda a mejorar la eficiencia del proceso de diseño y desarrollo de 
+interfaces de usuario.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------- LA BIBLIA ---------------------------------------------------------------------------------------------
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------- INTERNET 
+
+
+---------------------------------------------------- ¿Qué es el Internet?
+
+El Internet es una red global de computadoras interconectadas que permite la transmisión de datos y el acceso a información desde cualquier lugar del mundo. 
+En esencia, es una infraestructura que conecta dispositivos (como computadoras, teléfonos, servidores) para que puedan comunicarse entre sí utilizando un conjunto común de
+protocolos, principalmente el Protocolo de Internet (IP).
+
+
+
+---------------------------------------------------- ¿Cómo funciona el Internet?
+
+------------- Conexión física:
+
+El Internet está compuesto por millones de dispositivos conectados entre sí mediante cables submarinos, satélites, redes de fibra óptica, redes inalámbricas, etc.
+Las redes locales (LAN) se conectan a redes más grandes, formando una red jerárquica global.
+
+
+------------- Protocolo de comunicación:
+
+TCP/IP (Transmission Control Protocol / Internet Protocol) es el conjunto de reglas que regula cómo los datos viajan a través de la red.
+Los datos se dividen en pequeños paquetes que viajan a través de diferentes rutas y luego se vuelven a ensamblar en el destino.
+
+
+------------- Servidores y clientes:
+
+Cuando usas un navegador web, tu dispositivo (cliente) envía solicitudes a servidores para acceder a información.
+Los servidores almacenan datos (como páginas web, imágenes, videos) y los envían al cliente cuando se solicita.
+
+
+------------- DNS (Sistema de Nombres de Dominio):
+
+Actúa como una "guía telefónica" para el Internet. Convierte direcciones fáciles de recordar (como www.google.com) en direcciones IP (como 172.217.10.46), 
+que son las que las computadoras usan para comunicarse.
+
+
+
+
+-------------Componentes principales del Internet
+
+Proveedores de servicios de Internet (ISP):
+Empresas como Vodafone, Movistar o AT&T que ofrecen acceso a Internet a usuarios.
+
+Infraestructura física:
+Incluye cables, routers, satélites, centros de datos y antenas.
+
+Redes de distribución de contenido (CDN):
+Servidores distribuidos que entregan contenido rápidamente dependiendo de la ubicación del usuario.
+
+Direcciones IP y DNS:
+La base para la localización y comunicación en la red.
+
+
+
+
+---------------------------------------------------- ¿Qué es una IP y cómo funciona?
+
+La IP (Protocolo de Internet o Internet Protocol) es una dirección numérica única que identifica a cada dispositivo conectado a una red que utiliza el protocolo TCP/IP. 
+Piensa en ella como la "dirección postal" de un dispositivo dentro de Internet o una red local, permitiendo que los datos sepan exactamente a dónde ir y de dónde vienen.
+
+
+-------------¿Qué significa IP?
+
+Internet Protocol (Protocolo de Internet): Es el conjunto de reglas que rigen cómo los datos se envían y reciben en Internet.
+Una dirección IP es un número único asignado a cada dispositivo conectado a una red para identificarlo y permitir la comunicación entre ellos.
+
+Ejemplo de dirección IP:
+IPv4: 192.168.1.1
+IPv6: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+-------------¿Cómo funciona una dirección IP?
+
+Asignación:
+Cada dispositivo conectado a una red (como tu computadora, móvil, o impresora) recibe una dirección IP única.
+Las direcciones pueden ser asignadas de forma automática por un servidor DHCP (Protocolo de Configuración Dinámica de Host) o manualmente por el administrador de la red.
+
+---Tipos de IP:
+
+IP pública:
+Es la dirección que identifica a tu red en Internet.
+Ejemplo: Tu router tiene una IP pública asignada por tu proveedor de servicios de Internet (ISP).
+
+IP privada:
+Es la dirección que identifica dispositivos dentro de una red local.
+Ejemplo: Tu computadora y tu móvil pueden tener IPs privadas como 192.168.0.2 o 10.0.0.3.
+
+
+Comunicación entre dispositivos:
+Cuando envías datos (como visitar una página web), tu dispositivo utiliza su IP para identificarse y envía una solicitud al servidor correspondiente, que también tiene una IP.
+Los datos se dividen en paquetes, cada uno etiquetado con las IP de origen (tu dispositivo) y destino (el servidor).
+
+Traducción de nombres a IP (DNS):
+Las direcciones IP no son fáciles de recordar para los humanos, por lo que usamos nombres de dominio (como www.google.com).
+El Sistema de Nombres de Dominio (DNS) traduce esos nombres en direcciones IP para que las computadoras puedan comunicarse.
+
+------------- Tipos de direcciones IP
+
+IPv4:
+Es la versión más común y utiliza un formato de 32 bits.
+Ejemplo: 192.168.1.1
+Tiene un límite de aproximadamente 4.300 millones de direcciones únicas.
+
+IPv6:
+Creada para solucionar la escasez de direcciones IPv4.
+Utiliza un formato de 128 bits, lo que permite una cantidad casi infinita de direcciones.
+Ejemplo: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+------------- Estáticas y dinámicas:
+
+Estática: Una IP fija que no cambia (común en servidores).
+
+Dinámica: Asignada temporalmente por el ISP o un router y puede cambiar con el tiempo.
+
+
+------------- ¿Para qué sirve una dirección IP?
+
+Identificar dispositivos:
+Cada dispositivo tiene una dirección única para garantizar que los datos lleguen al destino correcto.
+
+Localización geográfica:
+Aunque no es precisa, una IP puede dar pistas sobre la ubicación aproximada de un dispositivo.
+
+Acceso a servicios:
+Algunas plataformas utilizan tu IP para mostrar contenido específico según tu región (como Netflix o YouTube).
+
+Seguridad y control:
+Los administradores de red pueden monitorear, restringir o permitir el acceso a dispositivos según su IP.
+
+
+------------- Curiosidades importantes sobre las IP
+
+El rango de IP privadas más común (reservado para redes locales) incluye:
+192.168.0.0 - 192.168.255.255
+10.0.0.0 - 10.255.255.255
+
+Las direcciones IPv4 públicas se están agotando, por eso se usa cada vez más IPv6.
+
+Puedes conocer tu IP pública buscando "¿Cuál es mi IP?" en Google o utilizando herramientas en línea.
+
+
+---------------------------------------------------- ¿Qué es HTTP?
+
+
+HTTP (Hypertext Transfer Protocol) es un protocolo de comunicación utilizado en la World Wide Web para la transferencia de datos entre los navegadores web (como Chrome, Firefox, Safari) y 
+los servidores web. Es un protocolo basado en texto, sin estado, y define cómo los mensajes se formatean y se transmiten entre el cliente (tu navegador) y el servidor (el sitio web).
+
+
+
+------------- ¿Cómo funciona HTTP?
+
+Cliente-Servidor:
+HTTP sigue el modelo cliente-servidor, donde el cliente (como tu navegador web) hace una solicitud al servidor (el sitio web).
+El servidor responde a la solicitud enviando los datos necesarios (por ejemplo, una página web, imágenes, etc.).
+
+Proceso básico:
+Cuando escribes una URL (como www.google.com) en tu navegador y presionas Enter, el navegador envía una solicitud HTTP al servidor que aloja la página.
+El servidor recibe la solicitud, procesa la petición y responde con el contenido solicitado, como el código HTML de la página.
+
+Estructura de una solicitud HTTP:
+Método HTTP: Define la acción a realizar (por ejemplo, GET, POST).
+Encabezados: Información adicional sobre la solicitud, como el tipo de navegador o el idioma preferido.
+Cuerpo: Datos opcionales que acompañan la solicitud (en el caso de un método como POST, que envía información al servidor).
+
+
+------------- Métodos HTTP más comunes
+
+GET:
+El método GET solicita datos de un servidor. Es el más común para obtener una página web o recursos (como imágenes o archivos).
+Ejemplo: Cuando accedes a www.google.com, el navegador está enviando una solicitud GET.
+
+POST:
+El método POST envía datos al servidor. Se usa generalmente cuando envías formularios, inicias sesión o envías datos al servidor.
+Ejemplo: Cuando te registras en un sitio web, el formulario de registro envía los datos mediante POST.
+
+PUT:
+Se utiliza para actualizar datos en el servidor.
+Ejemplo: Al actualizar un perfil de usuario.
+
+DELETE:
+El método DELETE elimina datos en el servidor.
+Ejemplo: Si borras una cuenta de usuario o un artículo.
+
+HEAD:
+Similar a GET, pero solo solicita los encabezados de la respuesta, sin el cuerpo (contenido).
+
+PATCH:
+Similar a PUT, pero se utiliza para realizar actualizaciones parciales a los datos.
+
+
+------------- Respuesta HTTP
+
+Cuando el servidor responde a una solicitud, la respuesta HTTP incluye:
+Código de estado HTTP: Un número de tres dígitos que indica el resultado de la solicitud.
+
+200 OK: Solicitud exitosa, la página o recurso solicitado fue encontrado y enviado.
+404 Not Found: El recurso solicitado no fue encontrado en el servidor.
+500 Internal Server Error: El servidor ha encontrado un error al procesar la solicitud.
+301 Moved Permanently: La URL solicitada ha sido cambiada permanentemente a otra dirección.
+
+Encabezados de respuesta: Información adicional sobre la respuesta, como el tipo de contenido que se está enviando (por ejemplo, text/html o application/json).
+
+Cuerpo de la respuesta: Contiene los datos solicitados (como el HTML de una página web, imágenes, o JSON si es una API).
+
+
+------------- Características clave de HTTP
+
+Sin estado:
+HTTP es un protocolo sin estado, lo que significa que cada solicitud es independiente y no guarda información sobre solicitudes anteriores.
+Si necesitas que el servidor "recuerde" algo, debes usar mecanismos adicionales como cookies o sesiones.
+
+**Conexiones **sin conexión:
+HTTP originalmente no mantenía una conexión constante entre el cliente y el servidor, lo que significa que después de que el servidor respondiera a la solicitud, la conexión se cerraba.
+En la práctica moderna, HTTP/2 y HTTP/3 permiten que las conexiones se mantengan abiertas para mejorar el rendimiento.
+
+
+------------- Seguridad en HTTP
+
+HTTPS (Hypertext Transfer Protocol Secure):
+Es la versión segura de HTTP, donde la comunicación se cifra utilizando SSL/TLS.
+En HTTPS, la conexión entre el cliente y el servidor está encriptada, protegiendo datos sensibles como contraseñas y números de tarjetas de crédito.
+Las URLs de sitios web seguros comienzan con https:// en lugar de http://.
+
+
+
+
+
+---------------------------------------------------- ¿Qué es un nombre de dominio?
+
+
+Un nombre de dominio es la dirección única que identifica a un sitio web en Internet. Es la forma amigable y fácil de recordar para acceder a un sitio, 
+en lugar de usar una dirección IP (que está formada por números). Por ejemplo, en lugar de acceder a un sitio web utilizando una dirección IP como 192.168.1.1, 
+puedes usar un nombre de dominio como www.ejemplo.com.
+
+
+Estructura de un nombre de dominio:
+
+-- Subdominio (opcional): www en www.ejemplo.com.
+-- Nombre de dominio: ejemplo en www.ejemplo.com.
+-- Extensión o dominio de nivel superior (TLD): .com, .org, .es, etc.
+
+
+---------------------------------------------------- ¿Qué es hosting?
+
+Hosting, también conocido como alojamiento web, es el servicio que permite almacenar los archivos de un sitio web (como HTML, imágenes, CSS, bases de datos, etc.) 
+en un servidor para que esté disponible en Internet.
+
+¿Cómo funciona el hosting?
+Cuando un sitio web es creado, sus archivos deben almacenarse en un servidor para que puedan ser accesibles a través de Internet.
+Los proveedores de hosting son empresas que proporcionan servidores donde se almacenan estos archivos, asegurándose de que el sitio esté disponible 24/7 y sea accesible desde 
+cualquier lugar del mundo.
+
+
+Existen diferentes tipos de hosting:
+
+-- Hosting compartido: Muchos sitios web comparten el mismo servidor. Es más económico pero con menos recursos.
+-- VPS (Servidor Virtual Privado): Un servidor físico dividido en servidores virtuales. Proporciona más control y recursos dedicados.
+-- Hosting dedicado: Un servidor exclusivo para un solo sitio, con recursos completos a disposición.
+-- Hosting en la nube: Distribuye los recursos en varios servidores, lo que ofrece flexibilidad y escalabilidad.
+
+
+---------------------------------------------------- ¿Qué es DNS y cómo funciona?
+
+El DNS (Sistema de Nombres de Dominio) es un sistema que traduce los nombres de dominio legibles para los humanos (como www.ejemplo.com) en direcciones IP (como 192.168.1.1) que 
+los servidores pueden entender.
+
+¿Cómo funciona el DNS?
+Cuando escribes un nombre de dominio en tu navegador (por ejemplo, www.ejemplo.com), el navegador necesita saber qué servidor debe contactar para obtener los archivos de ese sitio.
+El navegador consulta el servidor DNS para traducir ese nombre de dominio en una dirección IP.
+Una vez que el DNS devuelve la dirección IP asociada con el nombre de dominio, el navegador puede conectarse al servidor correcto y cargar el sitio web.
+
+
+Componentes clave del DNS:
+
+-- Servidor DNS: Un servidor que almacena las traducciones de nombres de dominio a direcciones IP.
+-- Resolución de nombres: El proceso de buscar la dirección IP asociada a un nombre de dominio.
+-- Cache de DNS: El navegador o el sistema operativo almacena temporalmente las traducciones de DNS para mejorar la velocidad de acceso a los sitios que visitas con frecuencia.
+
+
+
+
+---------------------------------------------------- ¿Qué es un navegador y cómo funciona?
+
+Un navegador es un software que permite acceder y visualizar sitios web en Internet. Algunos de los navegadores más conocidos son Google Chrome, Mozilla Firefox, Safari y Microsoft Edge.
+
+
+¿Cómo funciona un navegador?
+
+-- Ingreso de la URL: Cuando escribes una URL (por ejemplo, www.ejemplo.com) en la barra de direcciones de tu navegador, este primero consulta el DNS para obtener la dirección IP asociada a 
+ese nombre de dominio.
+-- Conexión al servidor: El navegador se conecta al servidor web utilizando la dirección IP obtenida.
+-- Solicitar recursos: El navegador solicita al servidor los archivos necesarios (HTML, CSS, imágenes, etc.) para mostrar la página web.
+-- Renderización: El navegador interpreta esos archivos y los presenta en forma de una página web visualmente comprensible para el usuario. Esto incluye procesar el HTML, aplicar el CSS y 
+ejecutar JavaScript para interactividad.
+
+
+Principales componentes de un navegador:
+
+-- Motor de renderizado: Se encarga de mostrar las páginas web interpretando el código HTML, CSS y JavaScript.
+-- Barra de direcciones: Permite escribir la URL para acceder a sitios web.
+-- Pestañas: Permite abrir múltiples páginas web en una sola ventana del navegador.
+-- Cache del navegador: Almacena archivos localmente para hacer más rápido el acceso a sitios web visitados con frecuencia.
+-- Herramientas de desarrollo: Permiten depurar y examinar el código de las páginas web.
+
+
+
+-------------------------------------------------------------------------------------------------------- HTML
+
+
+--------------------- infoHtml.html
+
+
+
+
+
+
+
+
+ 
+----------------------------------------------------
+
+
+
+---------------------------------------------------- ¿Qué es una IP y cómo funciona?
+---------------------------------------------------- ¿Qué es una IP y cómo funciona?
+---------------------------------------------------- ¿Qué es una IP y cómo funciona?
+---------------------------------------------------- ¿Qué es una IP y cómo funciona?
+
+
+-->

@@ -1,0 +1,332 @@
+<!-- DALE CAÑA A REACT COÑO!  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="infoReact.css">
+  <title>REACT 1</title>
+</head>
+
+<body>
+
+
+  <!-- Ejemplo comparado de JS con REACT
+
+  VANILLA JS (codigo imperativo)-->
+
+  <button data-id="123">Me gusta</button>
+
+  <!-- REACT (codigo declarativo) -->
+
+  <div id="root"></div>
+
+
+  <div id="app"></div>
+
+  <script src="reactinfo.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- 
+-----------------------------React:
+
+¿Qué es React? 
+React es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de usuario interactivas y reutilizables. 
+Se centra en la construcción de componentes reutilizables que gestionan su propio estado y se combinan para construir interfaces de usuario complejas. 
+React utiliza un modelo de programación declarativa, lo que significa que defines cómo debería verse tu interfaz de usuario en cualquier momento, 
+y React se encarga de actualizar y renderizar eficientemente los componentes cuando cambia el estado de la aplicación.
+
+
+-----------------------------JSX:
+
+¿Qué es JSX? 
+JSX es una extensión de sintaxis para JavaScript que se utiliza con React para describir cómo debería ser la interfaz de usuario. 
+Es una sintaxis similar a XML/HTML dentro de JavaScript. JSX facilita la escritura de código React de manera más clara y legible. 
+Aunque no es obligatorio usar JSX con React, es muy común y recomendado.
+
+Ejemplo de JSX:
+
+const element = <h1>Hola, mundo!</h1>;
+
+En este ejemplo, <h1>Hola, mundo!</h1> es JSX que representa un elemento de React.
+
+
+
+-----------------------------SWC (Speedy Web Compiler):
+
+¿Qué es SWC? SWC es un compilador de JavaScript/TypeScript de alto rendimiento y extensible. 
+Permite compilar código JavaScript moderno (incluyendo JSX y TypeScript) a un formato que sea ejecutable en los navegadores. 
+SWC está diseñado para ser rápido y se puede utilizar como reemplazo de Babel en proyectos de desarrollo web. Además de compilar código, 
+SWC también puede realizar otras tareas como minificación y transformación de código.
+
+SWC es especialmente útil en proyectos React para convertir el código JSX y ECMAScript moderno en una forma que sea compatible con navegadores más antiguos o para mejorar el
+rendimiento en general.
+
+React es una biblioteca de JavaScript para construir interfaces de usuario, JSX es una extensión de sintaxis utilizada con React para describir cómo debería ser la interfaz de 
+usuario de manera declarativa, y SWC es un compilador de JavaScript/TypeScript que puede ser utilizado en proyectos de desarrollo web, 
+incluyendo proyectos React, para optimizar el código y mejorar el rendimiento.
+
+
+
+
+--------------------------------------------------------------------- PASAR PROYECTO VANILLA A REACT  -------------------------------------------------------------------------->
+<!--
+1-- creamos el proyecto con vite
+
+  npm create vite@latest
+
+2-- Seleccionamos VANILLA
+
+3-- Seleccionamos JavaScript
+
+4-- cd proyecto
+  npm install @vitejs/plugin-react -E  (-E Esto garantiza que siempre se use exactamente esa versión, lo que puede ser útil para evitar problemas de compatibilidad o 
+                                        diferencias inesperadas entre entornos. )
+
+5-- instalar dependencias 
+npm install react react-dom -E
+
+6-- Creamos el archivo vite.config.js en la raiz del proyecto
+
+vite.config.js :
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+export default defineConfig({
+  plugins: [react()]
+})
+
+7-- Iniciar aplicacion con react en el punto de entrada ( main.js ) 
+
+import { createRoot } from 'react-dom/client'
+
+const root = createRoot(document.getElementById('app'))
+root.render(<h1>Hello World</h1>)
+
+8-- Cambiar la extension de main.js a jsx 
+9-- Cambiar la extension de main.js a main.jsx en el index.html
+
+-->
+
+
+<!-- ------------------------------------------------------------------  INSTALAR ESLINT STANDARD  -------------------------------------------------------------------------------
+
+- INSTALAR EXTENSION ESLINT
+- INSTALAR STANDARD como dependencia de desarrollo
+   npm install standard -D
+
+-AGREGAR A package.json para que tenga en cuenta las reglas de standard
+
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+
+-AGREGAR A SETTINGS.JSON para que formatee el codigo al guardar
+"editor.tabSize": 2,
+"editor.codeActionsOnSave": {
+  "source.fixAll.eslint": "always"
+} -->
+
+
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- ---------------------------------------------------------------------    .MAP     ----------------------------------------------------------------------------------------
+
+
+.map() es un método en JavaScript que se utiliza comúnmente con arreglos. Este método se llama en un arreglo y crea un nuevo arreglo con los resultados de llamar a una función 
+proporcionada en cada elemento del arreglo original. Aquí tienes una explicación más detallada:
+
+La sintaxis básica de .map() es la siguiente:
+
+
+nuevoArreglo = arregloOriginal.map(funcionDeRetorno(elemento, indice, arreglo));
+
+
+arregloOriginal: El arreglo en el cual se llama el método .map().
+
+funcionDeRetorno: Una función que se ejecutará para cada elemento del arreglo. Recibe tres argumentos:
+
+    elemento: El elemento actual que está siendo procesado.
+    indice: El índice del elemento actual en el arreglo.
+    arreglo: El arreglo sobre el cual se está iterando.
+
+El método .map() devuelve un nuevo arreglo con los resultados de aplicar la función de retorno a cada elemento del arreglo original.
+
+
+
+EJEMPLO:
+
+
+const numeros = [1, 2, 3, 4, 5];
+
+const duplicados = numeros.map((numero, indice) => {
+  console.log(`Procesando elemento en el índice ${indice}`);
+  return numero * 2;
+});
+
+console.log(duplicados);
+
+
+Durante el recorrido del map, se imprimirán estos mensajes en la consola:
+
+Procesando elemento en el índice 0
+Procesando elemento en el índice 1
+Procesando elemento en el índice 2
+Procesando elemento en el índice 3
+Procesando elemento en el índice 4
+
+Después, se imprimirá el array duplicados:
+
+[2, 4, 6, 8, 10] -->
+
+
+<!-- --------------------------------------------------------------------- HOOK  useState()  ESTADO  -------------------------------------------------------------------------------->
+
+
+<!-- 
+El useState en React es un hook que nos permite manejar el estado en componentes funcionales. En React, el estado es un objeto que almacena información dinámica que puede 
+cambiar con el tiempo. Antes de los hooks, solo los componentes de clase podían manejar estado, pero con useState, podemos trabajar con él en componentes funcionales.
+
+
+Declaración: Se utiliza dentro del componente para declarar una variable de estado y una función que permita actualizarla. La sintaxis básica es:
+
+const [estado, setEstado] = useState(valorInicial);
+
+estado: Es el valor actual del estado.
+setEstado: Es una función para actualizar el valor de estado.
+valorInicial: Es el valor con el que comienza el estado.
+
+Cuando se llama a setEstado, React vuelve a renderizar el componente con el nuevo valor del estado.
+
+
+EJEMPLO:
+
+
+function Contador() {
+  // Declaramos una variable de estado llamada 'contador', con un valor inicial de 0
+  const [contador, setContador] = useState(0);
+
+  // Función que incrementa el contador
+  const incrementar = () => {
+    setContador(contador + 1); // Actualizamos el estado
+  };
+
+  // Función que reinicia el contador a 0
+  const reiniciar = () => {
+    setContador(0); // Actualizamos el estado
+  };
+
+  return (
+    <div>
+      <h1>Contador: {contador}</h1>
+      <button onClick={incrementar}>
+        Incrementar
+      </button>
+      <button onClick={reiniciar}>
+        Reiniciar
+      </button>
+    </div>
+  );
+}
+
+
+-->
+
+<!-- --------------------------------------------------------------------- HOOK  useEffect()    ----------------------------------------------------------------------------------->
+
+<!-- 
+
+El hook useEffect es una herramienta en React que permite manejar efectos secundarios en los componentes funcionales. 
+Un efecto secundario es cualquier acción que interactúe con el mundo exterior de tu componente, como:
+
+Llamadas a una API.
+Actualización de datos.
+Subscripciones a eventos.
+Manipulación del DOM.
+
+
+useEffect(() => {
+  // Código del efecto principal
+  return () => {
+    // Código de limpieza opcional
+  };
+}, [dependencias]);
+
+
+1 Efecto principal: Es el código que deseas ejecutar.
+2 Limpieza opcional: Se ejecuta antes de que el efecto se vuelva a ejecutar o cuando el componente se desmonte.
+3 Array de dependencias: Controla cuándo se ejecuta el efecto:
+  -Si está vacío [], el efecto solo se ejecuta una vez, después del montaje.
+  -Si tiene dependencias, el efecto se ejecuta cuando alguna de ellas cambia.
+  -Si omites el array, el efecto se ejecuta después de cada renderizado (no recomendado en la mayoría de los casos).
+
+
+
+const Timer = () => {
+    const [seconds, setSeconds] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setSeconds((prev) => prev + 1);
+        }, 1000);
+
+        return () => {
+            clearInterval(interval); // Limpieza para evitar intervalos innecesarios
+        };
+    }, []); // Solo al montar y desmontar
+
+    return <h1>Segundos: {seconds}</h1>;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
